@@ -7,7 +7,7 @@ package main
 
 import (
 	"app/internal/conf"
-	"app/internal/module/greeter"
+	"app/internal/greetersvc"
 	"app/internal/server"
 
 	"github.com/go-kratos/kratos/v2"

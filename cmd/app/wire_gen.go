@@ -8,9 +8,9 @@ package main
 
 import (
 	"app/internal/conf"
-	"app/internal/module/greeter/biz"
-	"app/internal/module/greeter/data"
-	"app/internal/module/greeter/service"
+	"app/internal/greetersvc/biz"
+	"app/internal/greetersvc/data"
+	"app/internal/greetersvc/service"
 	"app/internal/server"
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"

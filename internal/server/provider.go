@@ -1,7 +1,7 @@
 package server
 
 import (
-	greetersvc "app/internal/module/greeter/service"
+	greetersvc "app/internal/greetersvc/service"
 
 	"github.com/google/wire"
 )

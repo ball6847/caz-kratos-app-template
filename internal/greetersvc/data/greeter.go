@@ -3,8 +3,8 @@ package data
 import (
 	"context"
 
-	"app/internal/module/greeter/core/domain"
-	"app/internal/module/greeter/core/port"
+	"app/internal/greetersvc/core/domain"
+	"app/internal/greetersvc/core/port"
 
 	"github.com/go-kratos/kratos/v2/log"
 )

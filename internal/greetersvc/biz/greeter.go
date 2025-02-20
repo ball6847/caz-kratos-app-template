@@ -1,9 +1,9 @@
 package biz
 
 import (
+	"app/internal/greetersvc/core/domain"
+	"app/internal/greetersvc/core/port"
 	"context"
-	"app/internal/module/greeter/core/domain"
-	"app/internal/module/greeter/core/port"
 
 	"github.com/go-kratos/kratos/v2/log"
 )

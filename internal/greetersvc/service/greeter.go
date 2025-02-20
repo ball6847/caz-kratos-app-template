@@ -4,8 +4,8 @@ import (
 	"context"
 
 	v1 "app/api/helloworld/v1"
-	"app/internal/module/greeter/biz"
-	"app/internal/module/greeter/core/domain"
+	"app/internal/greetersvc/biz"
+	"app/internal/greetersvc/core/domain"
 )
 
 // GreeterService is a greeter service.

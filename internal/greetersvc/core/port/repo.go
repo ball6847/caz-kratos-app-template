@@ -1,8 +1,8 @@
 package port
 
 import (
+	"app/internal/greetersvc/core/domain"
 	"context"
-	"app/internal/module/greeter/core/domain"
 )
 
 // GreeterRepo is a Greater repo.
