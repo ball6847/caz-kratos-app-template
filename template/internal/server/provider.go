@@ -1,7 +1,7 @@
 package server
 
 import (
-	greetersvc "app/internal/greetersvc/service"
+	greetersvc "<%= go_module_name %>/internal/greetersvc/service"
 
 	"github.com/google/wire"
 )

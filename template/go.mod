@@ -1,4 +1,4 @@
-module app
+module <%= go_module_name %>
 
 go 1.22.0
 

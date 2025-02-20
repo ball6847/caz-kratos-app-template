@@ -4,7 +4,7 @@ import (
 	"flag"
 	"os"
 
-	"app/internal/conf"
+	"<%= go_module_name %>/internal/conf"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/config"

@@ -3,7 +3,7 @@ package kratos.api;
 
 import "google/protobuf/duration.proto";
 
-option go_package = "app/internal/conf;conf";
+option go_package = "<%= go_module_name %>/internal/conf;conf";
 
 message Bootstrap {
   string name = 1;

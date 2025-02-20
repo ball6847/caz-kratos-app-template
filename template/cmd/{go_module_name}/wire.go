@@ -6,9 +6,9 @@
 package main
 
 import (
-	"app/internal/conf"
-	"app/internal/greetersvc"
-	"app/internal/server"
+	"<%= go_module_name %>/internal/conf"
+	"<%= go_module_name %>/internal/greetersvc"
+	"<%= go_module_name %>/internal/server"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"

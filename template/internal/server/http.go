@@ -1,8 +1,8 @@
 package server
 
 import (
-	helloworldv1 "app/api/helloworld/v1"
-	"app/internal/conf"
+	helloworldv1 "<%= go_module_name %>/api/helloworld/v1"
+	"<%= go_module_name %>/internal/conf"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"
@@ -41,7 +41,7 @@ func NewHTTPServer(c *conf.Bootstrap, logger log.Logger, svc *Service) *http.Ser
 		),
 	}
 	if c.Server.Http.Network != "" {
-		opts = append(opts, http.Network(c.Server.Http.Network))
+		opts = <%= go_module_name %>(opts, http.Network(c.Server.Http.Network))
 	}
 	if c.Server.Http.Addr != "" {
 		opts = append(opts, http.Address(c.Server.Http.Addr))

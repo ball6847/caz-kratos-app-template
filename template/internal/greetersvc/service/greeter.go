@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	v1 "app/api/helloworld/v1"
-	"app/internal/greetersvc/biz"
-	"app/internal/greetersvc/core/domain"
+	v1 "<%= go_module_name %>/api/helloworld/v1"
+	"<%= go_module_name %>/internal/greetersvc/biz"
+	"<%= go_module_name %>/internal/greetersvc/core/domain"
 )
 
 // GreeterService is a greeter service.

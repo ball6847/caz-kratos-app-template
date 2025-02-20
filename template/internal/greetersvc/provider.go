@@ -1,9 +1,9 @@
 package greeter
 
 import (
-	"app/internal/greetersvc/biz"
-	"app/internal/greetersvc/data"
-	"app/internal/greetersvc/service"
+	"<%= go_module_name %>/internal/greetersvc/biz"
+	"<%= go_module_name %>/internal/greetersvc/data"
+	"<%= go_module_name %>/internal/greetersvc/service"
 
 	"github.com/google/wire"
 )

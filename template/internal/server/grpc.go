@@ -1,8 +1,8 @@
 package server
 
 import (
-	helloworldv1 "app/api/helloworld/v1"
-	"app/internal/conf"
+	helloworldv1 "<%= go_module_name %>/api/helloworld/v1"
+	"<%= go_module_name %>/internal/conf"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"

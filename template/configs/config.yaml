@@ -1,5 +1,6 @@
 ---
 name: <%= name %>
+go_module_name: <%= go_module_name %>
 server:
   http:
     addr: 0.0.0.0:8000

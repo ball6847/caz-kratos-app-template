@@ -3,8 +3,8 @@ package data
 import (
 	"context"
 
-	"app/internal/greetersvc/core/domain"
-	"app/internal/greetersvc/core/port"
+	"<%= go_module_name %>/internal/greetersvc/core/domain"
+	"<%= go_module_name %>/internal/greetersvc/core/port"
 
 	"github.com/go-kratos/kratos/v2/log"
 )

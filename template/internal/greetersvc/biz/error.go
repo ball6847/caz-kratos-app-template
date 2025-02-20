@@ -1,7 +1,7 @@
 package biz
 
 import (
-	v1 "app/api/helloworld/v1"
+	v1 "<%= go_module_name %>/api/helloworld/v1"
 
 	"github.com/go-kratos/kratos/v2/errors"
 )

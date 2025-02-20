@@ -1,7 +1,7 @@
 package port
 
 import (
-	"app/internal/greetersvc/core/domain"
+	"<%= go_module_name %>/internal/greetersvc/core/domain"
 	"context"
 )
 
