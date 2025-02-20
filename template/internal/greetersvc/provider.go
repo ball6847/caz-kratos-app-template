@@ -1,4 +1,4 @@
-package greeter
+package greetersvc
 
 import (
 	"<%= go_module_name %>/internal/greetersvc/biz"

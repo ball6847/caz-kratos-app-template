@@ -19,7 +19,7 @@ import (
 func wireApp(s *conf.Bootstrap, d *conf.Data, logger log.Logger) (*kratos.App, func(), error) {
 	panic(wire.Build(
 		server.ProviderSet,
-		greeter.ProviderSet,
+		greetersvc.ProviderSet,
 		newApp,
 	))
 }
