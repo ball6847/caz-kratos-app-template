@@ -20,31 +20,9 @@ export default {
       message: "Project version",
     },
     {
-      name: "description",
+      name: "go_module_name",
       type: "text",
-      message: "Project description",
-      initial: "Awesome caz-kratos-app-template apps.",
-    },
-    {
-      name: "author",
-      type: "text",
-      message: "Project author name",
-    },
-    {
-      name: "email",
-      type: "text",
-      message: "Project author email",
-    },
-    {
-      name: "url",
-      type: "text",
-      message: "Project author url",
-    },
-    {
-      name: "github",
-      type: "text",
-      message: "GitHub username or organization",
-      initial: "zce",
+      message: "Go module name",
     },
     {
       name: "features",
