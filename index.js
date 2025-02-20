@@ -4,7 +4,7 @@ const path = require("path");
 const { name, version } = require("./package.json");
 
 /** @type {import('caz').Template} */
-export default {
+module.exports = {
   name,
   version,
   prompts: [
