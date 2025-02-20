@@ -1,7 +1,4 @@
-# @ball6847/caz-kratos-app-template
-
-[![Dependency Status][dependency-img]][dependency-url]
-[![Code Style][style-img]][style-url]
+# ball6847/caz-kratos-app-template
 
 > My personal caz template for creating kratos app
 
@@ -11,29 +8,15 @@ Prerequisites: [Node.js](https://nodejs.org) (>= 16.x required, >= 18.x preferre
 
 ```shell
 # create caz-kratos-app-template apps by this template
-$ npx caz caz-kratos-app-template my-caz-kratos-app-template
+$ npx caz ball6847/caz-kratos-app-template myapp
 
 # enter generated directory
-$ cd my-caz-kratos-app-template
+$ cd myapp
 
-# running test if you choose test features
-$ npm test # or `yarn test`
-```
-
-Or use globally installed CAZ:
-
-```shell
-# Install the `caz` globally
-$ npm install caz --global # or `yarn global add caz`
-
-# create caz-kratos-app-template apps by this template
-$ caz caz-kratos-app-template my-caz-kratos-app-template
-
-# enter generated directory
-$ cd my-caz-kratos-app-template
-
-# running test if you choose test features
-$ npm test # or `yarn test`
+# prepare and run
+$ make init
+$ make all
+$ make dev
 ```
 
 ## Related
@@ -54,8 +37,6 @@ $ npm test # or `yarn test`
 ## License
 
 [MIT](LICENSE) &copy; [Porawit Poboonma](https://fb.me/ball6847)
-
-
 
 [dependency-img]: https://img.shields.io/librariesio/github/ball6847/caz-kratos-app-template
 [dependency-url]: https://github.com/ball6847/caz-kratos-app-template
