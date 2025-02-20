@@ -41,7 +41,7 @@ func NewHTTPServer(c *conf.Bootstrap, logger log.Logger, svc *Service) *http.Ser
 		),
 	}
 	if c.Server.Http.Network != "" {
-		opts = <%= go_module_name %>(opts, http.Network(c.Server.Http.Network))
+		opts = append(opts, http.Network(c.Server.Http.Network))
 	}
 	if c.Server.Http.Addr != "" {
 		opts = append(opts, http.Address(c.Server.Http.Addr))
