@@ -23,7 +23,7 @@ import (
 // Injectors from wire.go:
 
 // wireApp init kratos application.
-func wireApp(s *conf.Server, d *conf.Data, logger log.Logger) (*kratos.App, func(), error) {
+func wireApp(s *conf.Bootstrap, d *conf.Data, logger log.Logger) (*kratos.App, func(), error) {
 	greeterRepo := data.NewGreeterRepo(logger)
 	greeterUsecase := biz.NewGreeterUsecase(greeterRepo, logger)
 	greeterService := service.NewGreeterService(greeterUsecase)

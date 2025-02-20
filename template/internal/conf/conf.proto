@@ -6,16 +6,23 @@ import "google/protobuf/duration.proto";
 option go_package = "app/internal/conf;conf";
 
 message Bootstrap {
-  Server server = 1;
-  Data data = 2;
+  string name = 1;
+  Server server = 2;
+  Data data = 3;
 }
 
 message Server {
   message HTTP {
+    message Swagger {
+      bool enabled = 1;
+      string local_file = 2;
+      string base_path = 3;
+      string title = 4;
+    }
     string network = 1;
     string addr = 2;
     google.protobuf.Duration timeout = 3;
-    bool swagger = 4;
+    Swagger swagger = 4;
   }
   message GRPC {
     string network = 1;

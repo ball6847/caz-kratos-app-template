@@ -76,7 +76,7 @@ func main() {
 		return
 	}
 
-	app, cleanup, err := wireApp(bc.Server, bc.Data, logger)
+	app, cleanup, err := wireApp(&bc, bc.Data, logger)
 	if err != nil {
 		logger.Log(log.LevelFatal, "msg", "error creating the application instance", "error", err)
 		return

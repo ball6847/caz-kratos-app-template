@@ -4,7 +4,8 @@ server:
   http:
     addr: 0.0.0.0:8000
     timeout: 1s
-    swagger: true
+    swagger:
+      enabled: true
   grpc:
     addr: 0.0.0.0:9000
     timeout: 1s

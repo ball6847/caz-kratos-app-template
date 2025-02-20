@@ -10,20 +10,20 @@ import (
 )
 
 // NewGRPCServer new a gRPC server.
-func NewGRPCServer(c *conf.Server, logger log.Logger, svc *Service) *grpc.Server {
+func NewGRPCServer(c *conf.Bootstrap, logger log.Logger, svc *Service) *grpc.Server {
 	var opts = []grpc.ServerOption{
 		grpc.Middleware(
 			recovery.Recovery(),
 		),
 	}
-	if c.Grpc.Network != "" {
-		opts = append(opts, grpc.Network(c.Grpc.Network))
+	if c.Server.Grpc.Network != "" {
+		opts = append(opts, grpc.Network(c.Server.Grpc.Network))
 	}
-	if c.Grpc.Addr != "" {
-		opts = append(opts, grpc.Address(c.Grpc.Addr))
+	if c.Server.Grpc.Addr != "" {
+		opts = append(opts, grpc.Address(c.Server.Grpc.Addr))
 	}
-	if c.Grpc.Timeout != nil {
-		opts = append(opts, grpc.Timeout(c.Grpc.Timeout.AsDuration()))
+	if c.Server.Grpc.Timeout != nil {
+		opts = append(opts, grpc.Timeout(c.Server.Grpc.Timeout.AsDuration()))
 	}
 	srv := grpc.NewServer(opts...)
 	helloworldv1.RegisterGreeterServer(srv, svc.Greeter)
