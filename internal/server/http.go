@@ -31,7 +31,7 @@ func NewHTTPServer(c *conf.Server, logger log.Logger, svc *Service) *http.Server
 		swaggerUI.RegisterSwaggerUIServerWithOption(
 			srv,
 			swaggerUI.WithLocalFile("openapi.yaml"),
-			swaggerUI.WithTitle("WebExpress"),
+			swaggerUI.WithTitle("Hello API"),
 			swaggerUI.WithBasePath("/api-docs"),
 		)
 	}
