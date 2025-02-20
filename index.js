@@ -29,7 +29,7 @@ module.exports = {
     );
     console.log("Getting Started:");
     if (ctx.dest !== process.cwd()) {
-      console.log(`  $ cd ${relative(process.cwd(), ctx.dest)}`);
+      console.log(`  $ cd ${path.relative(process.cwd(), ctx.dest)}`);
     }
     if (ctx.config.install === false) {
       console.log(`  $ npm install`);
