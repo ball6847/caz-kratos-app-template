@@ -5,7 +5,7 @@ openapi: 3.0.3
 info:
     title: '"Hello API"'
     description: The greeting service definition.
-    version: ""
+    version: 0fcb342
 paths:
     /helloworld/{name}:
         get:
