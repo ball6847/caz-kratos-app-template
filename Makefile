@@ -1,7 +1,7 @@
 GOHOSTOS:=$(shell go env GOHOSTOS)
 GOPATH:=$(shell go env GOPATH)
 VERSION=$(shell git describe --tags --always)
-APP_NAME="Hello API"
+APP_NAME=Hello API
 
 ifeq ($(GOHOSTOS), windows)
 	#the `find.exe` is different from `find` in bash/shell.
@@ -95,4 +95,4 @@ help:
 .DEFAULT_GOAL := help
 
 dev:
-	gow -s run ./cmd/webexpress-kratos/... -conf ./configs/
+	gow -s run ./cmd/app/... -conf ./configs/
