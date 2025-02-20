@@ -32,11 +32,9 @@ module.exports = {
     if (ctx.dest !== process.cwd()) {
       console.log(`  $ cd ${path.relative(process.cwd(), ctx.dest)}`);
     }
-    if (ctx.config.install === false) {
-      console.log(`  $ make init`);
-      console.log(`  $ make all`);
-      console.log(`  $ make dev`);
-    }
+    console.log(`  $ make init`);
+    console.log(`  $ make all`);
+    console.log(`  $ make dev`);
     console.log("\nHappy hacking :)\n");
   },
 };
