@@ -1,7 +1,7 @@
 // @ts-check
 
-import { relative } from "path";
-import { name, version } from "./package.json";
+const path = require("path");
+const { name, version } = require("./package.json");
 
 /** @type {import('caz').Template} */
 export default {
