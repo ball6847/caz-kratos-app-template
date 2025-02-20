@@ -1,0 +1,31 @@
+{
+  "name": "@ball6847/caz-kratos-app-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "My personal caz template for creating kratos app",
+  "keywords": [
+    "caz-kratos-app-template",
+    "ball6847",
+    "caz",
+    "zce"
+  ],
+  "repository": "ball6847/caz-kratos-app-template",
+  "license": "MIT",
+  "author": "Porawit Poboonma <ball6847@gmail.com> (https://fb.me/ball6847)",
+  "renovate": {
+    "extends": [
+      "zce"
+    ],
+    "ignorePaths": [
+      "template"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "template"
+    ]
+  },
+  "devDependencies": {
+    "caz": "^2.0.0"
+  }
+}
