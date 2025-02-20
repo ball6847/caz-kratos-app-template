@@ -15,43 +15,10 @@ export default {
       message: "Project name",
     },
     {
-      name: "version",
-      type: "text",
-      message: "Project version",
-    },
-    {
       name: "go_module_name",
       type: "text",
       message: "Go module name",
-    },
-    {
-      name: "features",
-      type: "multiselect",
-      message: "Choose the features you need",
-      instructions: false,
-      choices: [
-        // TODO: custom template features
-        { title: "Automatic test", value: "test", selected: true },
-        { title: "Foo", value: "foo" },
-      ],
-    },
-    {
-      name: "install",
-      type: "confirm",
-      message: "Install dependencies",
-      initial: true,
-    },
-    {
-      name: "pm",
-      type: (prev) =>
-        process.env.NODE_ENV === "test" || prev ? "select" : null,
-      message: "Package manager",
-      hint: " ",
-      choices: [
-        { title: "npm", value: "npm" },
-        { title: "pnpm", value: "pnpm" },
-        { title: "yarn", value: "yarn" },
-      ],
+      initial: "app",
     },
   ],
   complete: async (ctx) => {
