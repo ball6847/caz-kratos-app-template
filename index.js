@@ -21,6 +21,7 @@ module.exports = {
       initial: "app",
     },
   ],
+  init: true,
   complete: async (ctx) => {
     // TODO: custom complete callback
     console.clear();
@@ -32,9 +33,10 @@ module.exports = {
       console.log(`  $ cd ${path.relative(process.cwd(), ctx.dest)}`);
     }
     if (ctx.config.install === false) {
-      console.log(`  $ npm install`);
+      console.log(`  $ make init`);
+      console.log(`  $ make all`);
+      console.log(`  $ make dev`);
     }
-    console.log(`  $ ${ctx.config.install ? ctx.config.install : "npm"} test`);
     console.log("\nHappy hacking :)\n");
   },
 };
